@@ -108,6 +108,43 @@ body{
     font-size: 14px;
     display: none;
 }
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 90%;
+    }
+
+    .search input {
+        font-size: 16px;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .col img {
+        width: 30px;
+    }
+
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 50px;
+
+    }
+
+    .humidity,
+    .wind {
+        font-size: 24px;
+        margin-top: -4px;
+    }
+}
+
 @media screen and (max-width: 768px){
 
     .card{
@@ -127,6 +164,14 @@ body{
         width: 30px;
     }
 
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 50px;
+
+    }
     .humidity, 
     .wind{
         font-size: 24px;
@@ -134,17 +179,36 @@ body{
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 600px){
+
+    .card{
+        width: 90%;
+        max-width: none;
+    }
+
+    .search{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
 
     .search input{
-        padding: 8px 20px;
-        height: 50px;
-        font-size: 16px;
+        padding: 3px 15px;
+        height: 45px;
+        font-size: 14px;
+        
     }
 
     .search button{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 45px;
+        border: 0;
+        outline: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 50%;
     }
 
     .search button img{
@@ -163,6 +227,13 @@ body{
 
     .details {
         margin-top: 30px;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+
+
+
     }
 
     .col img{
@@ -216,6 +287,7 @@ body{
     }
 
     .details{
+        padding: 0 20px;
         margin-top: 70px;
         display: flex;
         justify-content: space-between;
